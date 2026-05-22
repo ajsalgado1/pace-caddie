@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#3C5E3A"/>
+  <!-- Flagstick + flag -->
+  <line x1="22" y1="14" x2="22" y2="50" stroke="#F2EDDD" stroke-width="3" stroke-linecap="round"/>
+  <path d="M22 14 L44 20 L22 26 Z" fill="#F2EDDD"/>
+  <!-- Green / cup -->
+  <ellipse cx="32" cy="50" rx="20" ry="4" fill="#1F2421" opacity="0.25"/>
+  <circle cx="22" cy="50" r="2.6" fill="#1F2421"/>
+</svg>
