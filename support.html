@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support | Pace Caddie</title>
+    <meta
+      name="description"
+      content="Support page for Pace Caddie, a simple golf pace-of-play timer app."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f2eddd;
+        --surface: #fbf8ef;
+        --text: #121e18;
+        --muted: #686b60;
+        --border: #cec9b4;
+        --green: #3c5e3a;
+        --ahead: #1e4d53;
+        --behind: #a44d31;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--text);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(860px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0;
+      }
+
+      .hero,
+      .panel {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        box-shadow: 0 18px 50px rgba(18, 30, 24, 0.08);
+      }
+
+      .hero {
+        padding: clamp(24px, 5vw, 48px);
+      }
+
+      .panel {
+        margin-top: 18px;
+        padding: 24px;
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        color: var(--green);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(38px, 8vw, 64px);
+        line-height: 1;
+      }
+
+      h2 {
+        margin: 0 0 10px;
+        font-size: 22px;
+        line-height: 1.2;
+      }
+
+      h3 {
+        margin: 20px 0 4px;
+        font-size: 17px;
+      }
+
+      p,
+      li {
+        font-size: 17px;
+      }
+
+      p {
+        margin: 0 0 14px;
+      }
+
+      ul,
+      ol {
+        margin: 8px 0 0;
+        padding-left: 22px;
+      }
+
+      a {
+        color: var(--green);
+        font-weight: 700;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .status-grid {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        margin-top: 14px;
+      }
+
+      .status {
+        border-radius: 18px;
+        color: white;
+        padding: 16px;
+      }
+
+      .status strong {
+        display: block;
+        font-size: 18px;
+        line-height: 1.2;
+      }
+
+      .on {
+        background: var(--green);
+      }
+
+      .ahead {
+        background: var(--ahead);
+      }
+
+      .behind {
+        background: var(--behind);
+      }
+
+      footer {
+        margin-top: 24px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <p class="eyebrow">Pace Caddie</p>
+        <h1>Support</h1>
+        <p class="muted">
+          Pace Caddie is a simple golf pace-of-play timer built for quick glances outdoors.
+        </p>
+        <p>
+          Use this page for basic help, App Store support information, and privacy links.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>How to use Pace Caddie</h2>
+        <ol>
+          <li>Set your target time for 18 holes. The default is 4:15.</li>
+          <li>Tap Start Round when you tee off.</li>
+          <li>Watch the large target-hole number to see where you should be to stay on pace.</li>
+          <li>Use Prev and Next to manually indicate your actual hole.</li>
+          <li>Use Pause if the round stops for a break, weather, or a delay you do not want counted.</li>
+        </ol>
+      </section>
+
+      <section class="panel">
+        <h2>Understanding the pace status</h2>
+        <div class="status-grid">
+          <div class="status on">
+            <strong>On pace</strong>
+            Shows time left on the current target hole.
+          </div>
+          <div class="status ahead">
+            <strong>Ahead of pace</strong>
+            Shows when your manually selected hole is ahead of the target hole.
+          </div>
+          <div class="status behind">
+            <strong>Behind pace</strong>
+            Shows when your manually selected hole is behind the target hole.
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Common questions</h2>
+
+        <h3>Does Pace Caddie use GPS?</h3>
+        <p>No. Pace Caddie does not use GPS or location tracking.</p>
+
+        <h3>Does the app collect data?</h3>
+        <p>No. Pace Caddie does not collect personal data, use accounts, show ads, or include tracking.</p>
+
+        <h3>Can I change the pace target?</h3>
+        <p>Yes. Use the settings control to choose a preset or adjust the target time.</p>
+
+        <h3>Why does the app show “left on hole”?</h3>
+        <p>
+          When your actual hole matches the target hole, Pace Caddie shows how much time remains before the
+          target pace moves to the next hole.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Contact and privacy</h2>
+        <p>
+          For support, use the developer contact information listed with Pace Caddie on the App Store.
+        </p>
+        <p>
+          Read the <a href="./privacy.html">Pace Caddie Privacy Policy</a>.
+        </p>
+      </section>
+
+      <footer>
+        <a href="./privacy.html">Privacy Policy</a> · <a href="./">Pace Caddie app</a>
+      </footer>
+    </main>
+  </body>
+</html>
